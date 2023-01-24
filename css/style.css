@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --white: #f5f5f5;
+    --black: rgb(46, 45, 45);
+    --primary-color: #680097;
+    --secondary-color: #a503a8;
+    --tertiary-color: #d600b1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Header Section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 1rem 2em;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo {
+    max-width: 2rem;
+}
+
+.brand {
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: var(--secondary-color);
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+
+.nav-list.active {
+    height: auto;
+    padding: 1rem 2rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    transition: all .5s;
+}
+
+.nav-list a:hover {
+    color: var(--tertiary-color);
+}
+
+.nav-toggle {
+    border: 1px solid var(--white);
+    outline: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav-toggle:hover{
+    opacity: .7;
+}
+
+
+/* media query for desktop device */
+@media screen and (min-width:768px){
+    .header {
+        padding: 1rem 3.5rem;
+    }
+    .brand {
+        display: flex;
+    }
+
+    .brand a {
+        text-decoration: none;
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    .nav-toggle{
+        display: none;
+    }
+
+    .nav-list{
+        gap: 1.7rem;
+        height: auto;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .nav-list a {
+        background-color: var(--secondary-color);
+        color: var(--white);
+        border: 0.1rem solid var(--white);
+        border-radius: 5%;
+        padding: 0.2rem;
+        text-align: center;
+    }
+    .nav-list a:hover {
+        background-color: var(--tertiary-color);
+        color: var(--white);
+        border: 0.1rem solid var(--white);
+        border-radius: 7%;
+        padding: 0.2rem;
+        text-align: center;
+    }
+}
