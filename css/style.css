@@ -74,7 +74,7 @@ img {
 .nav-list a {
     text-decoration: none;
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 1rem;
     transition: all .5s;
 }
 
@@ -97,7 +97,14 @@ img {
 }
 
 
-/* media query for desktop device */
+
+
+
+
+
+
+
+/* media query for desktop or large screen devices */
 @media screen and (min-width:768px){
     .header {
         padding: 1rem 3.5rem;
@@ -105,7 +112,6 @@ img {
     .brand {
         display: flex;
     }
-
     .brand a {
         text-decoration: none;
         color: var(--white);
@@ -115,8 +121,8 @@ img {
     .nav-toggle{
         display: none;
     }
-
     .nav-list{
+        padding: 2rem;
         gap: 1.7rem;
         height: auto;
         position: static;
@@ -124,19 +130,28 @@ img {
         background-color: transparent;
     }
     .nav-list a {
-        background-color: var(--secondary-color);
-        color: var(--white);
+        font-size: 1.2rem;
         border: 0.1rem solid var(--white);
         border-radius: 5%;
-        padding: 0.2rem;
-        text-align: center;
+        padding: 0 0.5rem;
     }
     .nav-list a:hover {
         background-color: var(--tertiary-color);
         color: var(--white);
-        border: 0.1rem solid var(--white);
-        border-radius: 7%;
-        padding: 0.2rem;
-        text-align: center;
+        border-radius: 5%;
+        padding: 0 0.5rem;
+    }
+    .nav-list .active {
+        background-color: var(--tertiary-color);
+    }
+    .social {
+        gap: 0.1rem;
+    }
+    .social a {
+        border: none;
+    }
+    .social a:hover {
+        background-color: var(--white);
+        color: var(--secondary-color);
     }
 }
