@@ -4,7 +4,7 @@
 
 :root {
     --white: #f5f5f5;
-    --cool: rgb(240, 240, 240);
+    --cool: rgb(243, 240, 240);
     --primary-color: #680097;
     --secondary-color: #a503a8;
     --tertiary-color: #d600b1;
@@ -238,8 +238,12 @@ img {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 2rem 25rem;
+        margin-bottom: 1rem;
     }
     .card-body{
-        border: 1px solid red;
+        gap: 0.5rem;
+        max-width: 40%;
+        margin: 1rem;
     }
 }
