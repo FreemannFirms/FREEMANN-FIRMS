@@ -167,6 +167,24 @@ img {
     padding: 0 0.5rem;
     transition: all 0.3s;
 }
+.more{
+    margin: 1rem auto;
+    padding: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.features > a:hover{
+    color: var(--tertiary-color);
+    background-color: var(--white);
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--secondary-color);
+    transition: all 0.3s;
+}
 
 /* About Us */
 .about_us{
