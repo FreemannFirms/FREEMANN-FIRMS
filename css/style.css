@@ -3,11 +3,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 :root {
-    --white: #f5f5f5;
-    --cool: rgb(252, 247, 247);
-    --primary-color: #680097;
-    --secondary-color: #a503a8;
+    --white: #fCFCFC;
+    --cool: #E9E9E9;
+    --primary-color: #a503a8;
+    --secondary-color: #680097;
     --tertiary-color: #d600b1;
+    --extra--effect: #d3b703;
 }
 * {
     box-sizing: border-box;
@@ -26,8 +27,8 @@ img {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    color: var(--white);
-    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    background-color: var(--white);
     width: 100%;
     padding: 1rem 2em;
 }
@@ -49,7 +50,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    background-color: var(--secondary-color);
+    background-color: var(--white);
+    color: var(--secondary-color);
     height: 0;
     overflow: hidden;
     position: absolute;
@@ -63,7 +65,7 @@ img {
 }
 .nav-list a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 1rem;
     transition: all .5s;
 }
@@ -71,17 +73,17 @@ img {
     color: var(--tertiary-color);
 }
 .nav-toggle {
-    border: 1px solid var(--white);
+    border: 1px solid var(--primary-color);
     outline: none;
     padding: .5rem;
     border-radius: .2rem;
     background-color: transparent;
-    color: var(--white);
+    color: var(--primary-color);
     cursor: pointer;
 }
 .nav-toggle:hover{
-    background-color: var(--white);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--white);
     transition: ease-in-out 0.4s;
 }
 
@@ -108,7 +110,7 @@ img {
 .cta{
     text-decoration: none;
     color: var(--white);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 900;
     padding: 1rem;
@@ -131,8 +133,9 @@ img {
     background-color: var(--cool);
 }
 .card-body{
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--secondary-color);
+    border: 0.1rem solid var(--secondary-color);
     border-radius: 0.3rem;
     padding: 1rem 0.5rem;
     justify-content: center;
@@ -147,9 +150,6 @@ img {
     font-size: 2.2rem;
 }
 .card-body > p{
-    background-color: var(--white);
-    color: var(--secondary-color);
-    border-radius: 0.2rem;
     text-align: justify;
     font-size: 1.2rem;
     font-weight: lighter;
@@ -157,32 +157,31 @@ img {
     margin: 1rem auto;
 }
 .card-body > a{
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 1.5rem;
 }
 .card-body > a:hover{
-    color: var(--tertiary-color);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--primary-color);
     border-radius: 0.2rem;
     padding: 0 0.5rem;
     transition: all 0.3s;
 }
 .more{
     margin: 1rem auto;
-    padding: 0.3rem;
+    padding: 0.2rem 0.6rem;
     text-align: center;
     text-decoration: none;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--white);
     border-radius: 0.3rem;
-    font-size: 1.3rem;
-    text-transform: uppercase;
+    border: 0.1rem solid var(--primary-color);
+    font-size: 1.2rem;
+    text-transform: capitalize;
 }
 .features > a:hover{
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     background-color: var(--white);
-    border-radius: 0.2rem;
-    border: 0.1rem solid var(--secondary-color);
     transition: all 0.3s;
 }
 
@@ -202,8 +201,7 @@ img {
 }
 .content > p{
     text-align: justify;
-    background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--secondary-color);
     padding: 1rem;
     margin-bottom: 4rem;
 }
@@ -219,8 +217,9 @@ img {
 }
 .pro_content{
     padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: var(--white);
+    border: 0.1rem solid var(--secondary-color);
+    color: var(--secondary-color);
 }
 .pro_title{
     text-transform: capitalize;
@@ -232,8 +231,6 @@ img {
 }
 .pro_section{
     margin-bottom: 0.5rem;
-    background-color: var(--white);
-    color: var(--secondary-color);
     border-radius: 0.3rem;
 }
 .pro_section > .icon{
@@ -284,7 +281,7 @@ img {
     }
     .brand a {
         text-decoration: none;
-        color: var(--white);
+        color: var(--primary-color);
         text-transform: uppercase;
         font-size: 2rem;
     }
@@ -301,7 +298,7 @@ img {
     }
     .nav-list a {
         font-size: 1.2rem;
-        border: 0.1rem solid var(--white);
+        border: 0.1rem solid var(--primary-color);
         border-radius: 5%;
         padding: 0 0.5rem;
     }
@@ -312,7 +309,8 @@ img {
         padding: 0 0.5rem;
     }
     .nav-list .active {
-        background-color: var(--tertiary-color);
+        background-color: var(--primary-color);
+        color: var(--white);
     }
     .social {
         gap: 0.1rem;
@@ -321,8 +319,8 @@ img {
         border: none;
     }
     .social a:hover {
-        background-color: var(--white);
-        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        color: var(--white);
     }
     /* banner */
     .banner{
@@ -384,9 +382,17 @@ img {
         flex-wrap: wrap;
     }
     .pro > .pro_content{
+        text-align: left;
         max-width: 45%;
     }
     .pro > img {
         max-width: 45%;
+    }
+    .pro_section{
+        display: flex;
+        flex-direction: row;
+    }
+    .pro_section_content{
+       padding-left: 1rem;
     }
 }
