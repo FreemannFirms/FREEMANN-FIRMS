@@ -17,9 +17,15 @@
     font-family: poppins;
 }
 img {
+    border-radius: 0.3rem;
     max-width: 100%;
     max-height: 100%;
 }
+.body-container{
+    justify-content: center;
+}
+
+/* HOME PAGE */
 
 /* Header & Nav Section */
 .header {
@@ -27,6 +33,7 @@ img {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 50;
     color: var(--primary-color);
     background-color: var(--white);
     width: 100%;
@@ -142,6 +149,15 @@ img {
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+    box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
+                inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
+                5px 5px 5px rgba(236, 9, 236, 0.863), 
+                -5px -5px 15px rgba(233, 5, 233, 0.795);
+}
+.card-body:hover {
+    /* position: relative; */
+    transform: translateX(0.6rem);
+    transition: ease-in-out 0.5s;
 }
 .card-body > .icon{
     font-size: 2rem;
@@ -168,22 +184,23 @@ img {
     padding: 0 0.5rem;
     transition: all 0.3s;
 }
-.more{
-    margin: 1rem auto;
-    padding: 0.2rem 0.6rem;
-    text-align: center;
+.features > .cta {
+    align-items: center;
+    background-color: transparent;
+    margin: 1rem 3rem;
+}
+.features > .cta > a{
     text-decoration: none;
-    background-color: var(--primary-color);
     color: var(--white);
+    background-color: var(--primary-color);
+    padding: 0.7rem 2rem;
     border-radius: 0.3rem;
     border: 0.1rem solid var(--primary-color);
-    font-size: 1.2rem;
-    text-transform: capitalize;
 }
-.features > a:hover{
-    color: var(--secondary-color);
+.features > .cta > a:hover{
     background-color: var(--white);
-    transition: all 0.3s;
+    color: var(--primary-color);
+    transition: ease-in-out 0.2s;
 }
 
 /* About Us */
@@ -221,6 +238,7 @@ img {
     background-color: var(--white);
     border: 0.1rem solid var(--secondary-color);
     color: var(--secondary-color);
+    border-radius: 0.4rem;
 }
 .pro_title{
     text-transform: capitalize;
@@ -257,6 +275,12 @@ img {
 }
 .footer > h2{
     padding: 1rem;
+}
+.contact{
+    box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
+                inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
+                5px 5px 5px rgba(236, 9, 236, 0.863), 
+                -5px -5px 15px rgba(233, 5, 233, 0.795);
 }
 .contact_content{
     background: var(--white);
@@ -305,7 +329,23 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
 /* SPACE FOR INSTROSPECTION */
+
+
+
+
+
+
+
 
 
 
@@ -374,6 +414,7 @@ img {
         background-color: var(--primary-color);
         color: var(--white);
     }
+    
     /* banner */
     .banner{
         background-position: 50% 50%;
@@ -389,11 +430,13 @@ img {
     .cta{
         font-size: 2rem;
     }
+
     /* features */
     .features{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         padding: 2rem 7rem;
         margin-bottom: 1rem;
     }
@@ -402,6 +445,11 @@ img {
         max-width: 47%;
         margin: 1rem;
     }
+    .card-body:hover {
+        transform: translateY(-0.6rem);
+        transition: ease-in-out 0.5s;
+    }
+
     /* About us */
     .about_us{
         flex-direction: row;
@@ -409,6 +457,7 @@ img {
         gap: 1rem;
         text-align: left;
         justify-content: center;
+        margin: 1rem 3rem;
     }
     .about_us > img{
         max-width: 45%;
@@ -431,6 +480,7 @@ img {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 2rem 3rem;
     }
     .pro > .pro_content{
         border-radius: 0.3rem;
@@ -449,10 +499,15 @@ img {
     }
     /* footer */
     .contact{
+        margin: auto;
         display: flex;
         flex-direction: row;
         flex: wrap;
         justify-content: center;
+        box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
+                inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
+                5px 5px 5px rgba(236, 9, 236, 0.863), 
+                -5px -5px 15px rgba(233, 5, 233, 0.795);
     }
     .contact_content>hr{
         width: 4%;
