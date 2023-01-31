@@ -9,6 +9,7 @@
     --secondary-color: #680097;
     --tertiary-color: #d600b1;
     --extra--effect: #d3b703;
+    --black: #000;
 }
 * {
     box-sizing: border-box;
@@ -34,7 +35,7 @@ img {
     align-items: center;
     position: fixed;
     z-index: 50;
-    color: var(--primary-color);
+    color: var(--black);
     background-color: var(--white);
     width: 100%;
     padding: 1rem 2em;
@@ -58,7 +59,7 @@ img {
     flex-direction: column;
     gap: .5rem;
     background-color: var(--white);
-    color: var(--secondary-color);
+    color: var(--black);
     height: 0;
     overflow: hidden;
     position: absolute;
@@ -72,7 +73,7 @@ img {
 }
 .nav-list a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--black);
     font-size: 1rem;
     transition: all .5s;
 }
@@ -142,20 +143,19 @@ img {
 }
 .card-body{
     background-color: var(--white);
-    color: var(--secondary-color);
-    border: 0.1rem solid var(--secondary-color);
+    color: var(--black);
     border-radius: 0.3rem;
     padding: 1rem 0.5rem;
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
                 inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
                 5px 5px 5px rgba(236, 9, 236, 0.863), 
                 -5px -5px 15px rgba(233, 5, 233, 0.795);
 }
 .card-body:hover {
-    /* position: relative; */
     transform: translateX(0.6rem);
     transition: ease-in-out 0.5s;
 }
@@ -174,8 +174,8 @@ img {
     margin: 1rem auto;
 }
 .card-body > a{
-    color: var(--secondary-color);
-    font-size: 1.5rem;
+    color: var(--black);
+    font-size: 1.9rem;
 }
 .card-body > a:hover{
     color: var(--white);
@@ -193,13 +193,14 @@ img {
     text-decoration: none;
     color: var(--white);
     background-color: var(--primary-color);
-    padding: 0.7rem 2rem;
+    padding: 1rem;
     border-radius: 0.3rem;
     border: 0.1rem solid var(--primary-color);
+    font-weight: 900;
 }
 .features > .cta > a:hover{
     background-color: var(--white);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition: ease-in-out 0.2s;
 }
 
@@ -210,16 +211,15 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: var(--black);
 }
 .content > h1{
     padding: 1rem;
     text-transform: capitalize;
-    color: var(--secondary-color);
     font-size: 1.9rem;
 }
 .content > p{
     text-align: justify;
-    color: var(--secondary-color);
     padding: 1rem;
     margin-bottom: 4rem;
 }
@@ -227,6 +227,7 @@ img {
 /* professional section */
 .pro{
     background-color: var(--cool);
+    color: var(--black);
     margin: 2rem 0;
     padding: 1rem;
     display: flex;
@@ -236,8 +237,6 @@ img {
 .pro_content{
     padding: 1rem;
     background-color: var(--white);
-    border: 0.1rem solid var(--secondary-color);
-    color: var(--secondary-color);
     border-radius: 0.4rem;
 }
 .pro_title{
@@ -277,6 +276,7 @@ img {
     padding: 1rem;
 }
 .contact{
+    color: var(--black);
     box-shadow: inset 5px 5px 5px rgba(172, 168, 171, 0.616), 
                 inset -5px -5px 15px rgba(138, 131, 137, 0.616), 
                 5px 5px 5px rgba(236, 9, 236, 0.863), 
@@ -284,7 +284,6 @@ img {
 }
 .contact_content{
     background: var(--white);
-    color: var(--secondary-color);
     border-radius: 0.3rem;
     padding: 1rem;
     margin: 0.5rem;
@@ -365,6 +364,7 @@ img {
 @media screen and (min-width:768px){
     /* header & nav */
     .header {
+        color: var(--black);
         padding: 0 3.5rem;
     }
     .brand {
@@ -390,7 +390,6 @@ img {
     .nav-list a {
         font-size: 1.2rem;
         border: 0.1rem solid var(--secondary-color);
-        color: var(--secondary-color);
         border-radius: 5%;
         padding: 0 0.5rem;
     }
@@ -418,8 +417,8 @@ img {
     /* banner */
     .banner{
         background-position: 50% 50%;
-        padding: 20rem 5rem 40rem 5rem;
-        height: auto;
+        padding: 15rem 5rem 40rem 5rem;
+        height: 50vh;
     }
     .banner-title{
         font-size: 3.5rem;
@@ -428,7 +427,7 @@ img {
         font-size: 2rem;
     }
     .cta{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     /* features */
@@ -440,6 +439,10 @@ img {
         padding: 2rem 7rem;
         margin-bottom: 1rem;
     }
+    .features > .cta > a {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
     .card-body{
         gap: 0.5rem;
         max-width: 47%;
@@ -449,6 +452,7 @@ img {
         transform: translateY(-0.6rem);
         transition: ease-in-out 0.5s;
     }
+
 
     /* About us */
     .about_us{
@@ -467,7 +471,7 @@ img {
         text-align: left;
     }
     .about_us > .content > h1{
-        border-top: 0.7rem solid var(--secondary-color);
+        border-top: 0.7rem solid var(--black);
         padding: none;
 
     }

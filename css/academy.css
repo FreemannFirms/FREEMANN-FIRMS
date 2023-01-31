@@ -28,7 +28,7 @@ img {
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: var(--secondary-color);
+    color: var(--black);
 }
 .hero_content > h2{
     font-size: 2.5rem;
@@ -42,9 +42,11 @@ img {
 }
 .hero_link > a{
     text-decoration: none;
+    color: var(--black);
     border: 0.1rem solid var(--primary-color);
-    border-radius: 0.2rem;
-    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    font-weight: 900;
 }
 .hero_link > a:hover{
     background-color: var(--primary-color);
@@ -61,22 +63,24 @@ img {
 
 /* about */
 .content > h1{
-    border-top: 0.2rem solid var(--secondary-color);
+    border-top: 0.2rem solid var(--black);
 }
 
 /* Courses */
 .features{
+    color: var(--black);
     text-align: center;
 }
 .features > .card-title > h2 {
     padding: 1rem;
     text-transform: capitalize;
-    color: var(--secondary-color);
     font-size: 1.9rem;
 }
 .features > .card-title > p {
-    color: var(--secondary-color);
     padding: 1rem;
+    margin-bottom: 2rem;
+}
+.card-body{
     margin-bottom: 2rem;
 }
 .card-body > .details{
@@ -89,12 +93,13 @@ img {
     margin: 1rem;
 }
 
+
 /* learn */
 .learn{
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--black);
 }
 .learn-title{
     padding: 1rem;
@@ -110,11 +115,12 @@ img {
     border-radius: 0.3rem;
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 1rem 2rem;
+    padding: 1rem;
+    font-weight: 900;
 }
 .learn-title > a:hover{
     background-color: var(--white);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition: ease-in-out 0.3s;
 }
 .learn-card-container{
@@ -134,6 +140,7 @@ img {
 
 /* career */
 .career{
+    color: var(--black);
     background-color: var(--cool);
     margin: 2rem 0;
     padding: 1rem;
@@ -145,7 +152,6 @@ img {
 .career > .content > h3{
     padding: 0.5rem;
     text-transform: capitalize;
-    color: var(--secondary-color);
     font-size: 1.9rem;
 }
 .career > .content > a {
@@ -154,11 +160,12 @@ img {
     color: var(--white);
     border-radius: 0.2rem;
     border: 0.1rem solid var(--primary-color);
-    padding: 1rem 9rem;
+    padding: 1rem;
+    font-weight: 900;
 }
 .career > .content > a:hover{
     background-color: var(--white);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .career > img {
     padding: 2rem;
@@ -245,6 +252,9 @@ img {
         justify-content: space-between;
    }
    .learn-card{
+        background-color: var(--cool);
+        padding: 1rem;
+        border-radius: 0.3rem;
         display: flex;
         flex-direction: row;
         width: 49%;

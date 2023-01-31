@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --white: #fCFCFC;
+    --cool: #E9E9E9;
+    --primary-color: #a503a8;
+    --secondary-color: #680097;
+    --tertiary-color: #d600b1;
+    --extra--effect: #d3b703;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+.body-container{
+    background: linear-gradient(rgb(41, 2, 41), rgba(241, 104, 235, 0.281)), url(../img/cmss.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* header */
+.header{
+    background: transparent;
+}
+.nav-list{
+    background: transparent;
+}
+.nav-list a {
+    color: var(--white);
+}
+
+/* hero */
+.hero{
+    background: transparent;
+    color: var(--cool);
+    padding: 8rem 2rem 20rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero > h2{
+    font-size: 2.5rem;
+}
+.hero > p{
+    padding: 2rem;
+}
+.link{
+    padding: 10rem 1rem 0 1rem;
+}
+.link > p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.link > a{
+    font-size: 2rem;
+    color: var(--white);
+    padding: 0.5rem;
+}
+.link > a:hover{
+    color: var(--primary-color);
+}
+
+
+
+/* media query */
+@media screen and (min-width:768px) {
+    .brand > a {
+        color: var(--cool);
+    }
+    .hero > h2{
+        font-size: 4rem;
+    }
+    .hero > p{
+        font-size: 1.5rem;
+    }
+    .link{
+        padding: 15rem 1rem 0 1rem;
+    }
+}
