@@ -315,7 +315,37 @@ img {
     margin-top: 3rem;
 }
 
-
+/* services */
+.services{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2.5rem 1rem;
+}
+.services > .title > h3{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.services > .card{
+    padding: 1rem;
+}
+.services > .card > .card-content{
+    background-color: var(--cool);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+.card-content > p{
+    font-size: 1.4rem;
+}
+.card-content > a > .icon{
+    font-size: 1.4rem;
+}
 
 
 
@@ -501,6 +531,12 @@ img {
     .pro_section_content{
        padding-left: 1rem;
     }
+
+    /* services */
+    .services > .card{
+        margin: 0 6rem;
+    }
+
     /* footer */
     .contact{
         margin: auto;

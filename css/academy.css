@@ -195,6 +195,9 @@ img {
         margin: auto;
         width: 49%;
    }
+   .hero_content{
+    padding: 4rem 1rem 2rem 1rem;
+   }
    .hero_content > h2{
         font-size: 3.5rem;
    }
