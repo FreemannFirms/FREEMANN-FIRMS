@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --white: #fCFCFC;
+    --cool: #f7f7f7;
+    --primary-color: #a503a8;
+    --secondary-color: #680097;
+    --tertiary-color: #d600b1;
+    --extra--effect: #d3b703;
+    --black: #000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+img {
+    border-radius: 0.3rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+.body-container{
+    justify-content: center;
+    color: var(--black);
+}
+
+/* hero */
+.hero{
+    background-color: var(--cool);
+}
+.hero_content{
+    background-color: var(--white);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero_content > h2{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.hero_content > p{
+    text-align: center;
+    font-size: 1rem;
+}
+.hero_content_info{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.hero_content_section{
+    background-color: var(--cool);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    margin: 1rem;
+    width: 49%;
+}
+.tutor{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: left;
+}
+.tutor > img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.tutor > .tutor_info{
+    padding: 1rem;
+}
+
+/* about */
+.about{
+    margin-top: 1rem;
+}
+.tabs-button{
+    margin: 0 2rem;
+    border-bottom: 0.1rem solid var(--black);
+}
+.tabs-button-content > h3{
+    font-size: 1.3rem;
+}
+/*  */
+.tabs-content{
+    margin: 1rem 2rem;
+}
+.tabs-content > h3{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+.tabs-content > p{
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem 0;
+}
+.tabs-content > ul{
+    margin: 0 1rem;
+}
+.tabs-content > .link{
+    border: 0.1rem solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+.tabs-content > a:hover{
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
+.tabs-content > .reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 0.1rem solid var(--black);
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+/* media query for large screens */
+@media screen and (min-width:768px) {
+    /* hero */
+    .hero_content{
+        margin-top: 1rem;
+    }
+    .hero_content > h2{
+        padding: 0 2rem;
+        text-align: left;
+    }
+    .hero_content > p{
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+
+    /* about */
+    .tabs > .tabs-sidebar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 0.1rem solid var(--black);
+    }
+    .tabs-button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: none;
+    }
+    .tabs-button-content{
+        border: none;
+    }
+}
