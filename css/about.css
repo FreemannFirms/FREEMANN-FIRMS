@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --white: #fCFCFC;
+    --cool: #f7f7f7;
+    --primary-color: #a503a8;
+    --secondary-color: #680097;
+    --tertiary-color: #d600b1;
+    --extra--effect: #d3b703;
+    --black: #000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+img {
+    border-radius: 0.3rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+.body-container{
+    justify-content: center;
+    color: var(--black);
+}
+
+/* about */
+.about{
+    background-color: var(--cool);
+    padding: 2rem;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid var(--black);
+}
+.section > .icon{
+    font-size: 1.5rem;
+}
+.section > h2{
+    font-size: 1.7rem;
+}
+.section > p{
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    /* about */
+    .about{
+        padding: 2rem 6rem;
+    }
+}
