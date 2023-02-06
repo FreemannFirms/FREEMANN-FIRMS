@@ -495,6 +495,7 @@ img {
     }
     .about_us > img{
         max-width: 45%;
+        max-height: 45%;
     }
     .about_us > .content{
         max-width: 45%;
@@ -527,6 +528,7 @@ img {
     .pro_section{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     .pro_section_content{
        padding-left: 1rem;
