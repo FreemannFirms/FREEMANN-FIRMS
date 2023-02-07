@@ -39,11 +39,11 @@ img {
 }
 .hero_content > h2{
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 .hero_content > p{
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .hero_content_info{
     padding: 1rem;
@@ -59,6 +59,9 @@ img {
     gap: 0.4rem;
     margin: 1rem;
     width: 49%;
+}
+.hero_content_section > p{
+    font-size: 0.8rem;
 }
 .tutor{
     display: flex;
@@ -92,13 +95,13 @@ img {
     margin: 1rem 2rem;
 }
 .tabs-content > h3{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
     text-transform: uppercase;
 }
 .tabs-content > p{
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 0.9em;
+    text-align: left;
     padding: 1rem 0;
 }
 .tabs-content > ul{
@@ -132,7 +135,7 @@ img {
 
 
 /* media query for large screens */
-@media screen and (min-width:768px) {
+@media screen and (min-width:1000px) {
     /* hero */
     .hero_content{
         margin-top: 1rem;

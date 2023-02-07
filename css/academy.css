@@ -24,28 +24,33 @@ img {
 
 /* hero */
 .hero{
-    padding: 6rem 2rem 1rem 2rem;
+    padding: 4rem 0.5rem 1rem 0.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: var(--black);
 }
 .hero_content > h2{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 1rem;
 }
 .hero_content > p{
+    font-size: 0.8rem;
     padding: 0.5rem;
 }
 .hero_link{
-    padding: 1rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: auto;
 }
 .hero_link > a{
     text-decoration: none;
+    font-size: 0.9rem;
     color: var(--black);
     border: 0.1rem solid var(--primary-color);
     border-radius: 0.3rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-weight: 900;
 }
 .hero_link > a:hover{
@@ -63,22 +68,29 @@ img {
 
 /* about */
 .content > h1{
+    font-size: 1.4rem;
     border-top: 0.2rem solid var(--black);
+}
+.content > p{
+    font-size: 0.9rem;
 }
 
 /* Courses */
 .features{
+    display: flex;
+    flex-direction: column;
     color: var(--black);
     text-align: center;
 }
 .features > .card-title > h2 {
-    padding: 1rem;
+    padding: 0 1rem;
     text-transform: capitalize;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 .features > .card-title > p {
-    padding: 1rem;
-    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 .card-body{
     margin-bottom: 2rem;
@@ -91,6 +103,9 @@ img {
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
+}
+.card-body > .details > p{
+    font-size: 0.9rem;
 }
 
 /* learn */
@@ -105,7 +120,7 @@ img {
     margin-bottom: 1rem;
 }
 .learn-title > h2{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 .learn-title > a{
@@ -114,7 +129,8 @@ img {
     border-radius: 0.3rem;
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
     font-weight: 900;
 }
 .learn-title > a:hover{
@@ -126,15 +142,15 @@ img {
     padding: 1rem;
 }
 .learn-card > .icon{
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 .learn-card-content > h3{
     text-transform: capitalize;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0.2rem;
 }
 .learn-card-content > p{
-    padding: 1rem;
+    padding: 0.9rem;
 }
 
 /* career */
@@ -151,7 +167,10 @@ img {
 .career > .content > h3{
     padding: 0.5rem;
     text-transform: capitalize;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+.career > .content > p{
+    font-size: 0.9rem;
 }
 .career > .content > a {
     text-decoration: none;
@@ -159,7 +178,7 @@ img {
     color: var(--white);
     border-radius: 0.2rem;
     border: 0.1rem solid var(--primary-color);
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-weight: 900;
 }
 .career > .content > a:hover{
@@ -181,7 +200,7 @@ img {
 
 
 /* media query for desktop or large screen devices */
-@media screen and (min-width:768px){
+@media screen and (min-width:1000px){
    /* hero */
    .hero{
         display: flex;
