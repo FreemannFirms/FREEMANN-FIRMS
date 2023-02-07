@@ -29,8 +29,9 @@
 }
 .nav-list{
     background: transparent;
+    color: var(--cool);
 }
-.nav-list a {
+.social{
     color: var(--white);
 }
 
@@ -42,6 +43,19 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.hero > a{
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--white);
+    margin: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: ease-in 0.2ms;
+}
+.hero > a:hover{
+    color: var(--white);
+    background-color: var(--primary-color);
 }
 .hero > h2{
     font-size: 2.5rem;
