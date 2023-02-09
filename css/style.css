@@ -397,29 +397,28 @@ img {
 
 
 /* media query for desktop or large screen devices */
-@media screen and (min-width:1000px){
+@media screen and (min-width:999px){
     /* header & nav */
     .header {
-        color: var(--black);
-        padding: 0 5rem;
-        border: 1px solid red;
+        padding: 0 2rem;
+    }
+    .nav-header{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 0.4rem;
         align-items: center;
     }
     .brand {
         display: flex;
         flex-direction: row;
+        gap: 1rem;
     }
     .brand a {
         text-decoration: none;
         color: var(--primary-color);
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .nav-container {
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -436,7 +435,7 @@ img {
         background-color: transparent;
     }
     .nav-list a {
-        font-size: 1.2rem;
+        font-size: 1rem;
         border: 0.1rem solid var(--secondary-color);
         border-radius: 5%;
         padding: 0 0.5rem;
@@ -487,15 +486,22 @@ img {
         justify-content: center;
         padding: 2rem 7rem;
         margin-bottom: 1rem;
+        grid-gap: 5px; 
+    }
+    .features > .cta{
+        /*  */
     }
     .features > .cta > a {
-        font-size: 1.5rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
     .card-body{
-        gap: 0.5rem;
-        max-width: 47%;
+        max-width: 45%;
+        max-height: fit-content;
         margin: 1rem;
+    }
+    .card-body > p{
+        text-align: center;
     }
     .card-body:hover {
         transform: translateY(-0.6rem);
@@ -505,25 +511,26 @@ img {
 
     /* About us */
     .about_us{
+
+        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 1rem;
-        text-align: left;
+        flex-wrap: wrap;
         justify-content: center;
-        margin: 1rem 3rem;
+        margin: 0 3rem;
     }
     .about_us > img{
         max-width: 45%;
-        max-height: 45%;
+        max-height: fit-content;
+        margin: .5rem;
     }
     .about_us > .content{
         max-width: 45%;
         text-align: left;
+        margin: .5rem;
     }
     .about_us > .content > h1{
         border-top: 0.7rem solid var(--black);
-        padding: none;
-
+        font-size: 1.5rem;
     }
     .about_us > .content > p{
         border-radius: 0.2rem;
@@ -570,8 +577,16 @@ img {
                 5px 5px 5px rgba(236, 9, 236, 0.863), 
                 -5px -5px 15px rgba(233, 5, 233, 0.795);
     }
+    .contact_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        min-width: 15rem;
+    }
     .contact_content>hr{
-        width: 4%;
+        width: 100%;
         border: 0.1rem solid var(--secondary-color);
     }
 }

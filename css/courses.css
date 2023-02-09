@@ -128,9 +128,6 @@ img {
 
 /* media query for desktop and large screen devices*/
 @media screen and (min-width:1000px) {
-    .hero_content{
-        padding-top: 3.5rem;
-    }
 
     /* learn */
     .learn{
@@ -147,11 +144,20 @@ img {
     }
     .tabs{
         padding: 1rem 7rem;
+        width: 100%;
     }
     .tabs-sidebar{
         border-top: 0.1rem solid var(--black);
         flex-direction: row;
         text-align: center;
         justify-content: space-around;
+        width: 100%;
+    }
+    .tabs-sidebar > .tabs-button > .tabs-button-content{
+        /* winner */
+    }
+    .tabs-sidebar > .tabs-button > .tabs-button-content > h3{
+        font-size: 1rem;
+        text-transform: uppercase;
     }
 }
